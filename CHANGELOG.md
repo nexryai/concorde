@@ -1,3 +1,7 @@
+## 12.25Q1.3
+ - BREAKING: DockerイメージのレジストリをGHCRに移動
+ - Chore: 依存関係の更新
+
 ## 12.25Q1.2
 ### 重要: Dockerのイメージのリポジトリが変更されました
 新しいパスは`docker.io/nexryai/concorde`です
