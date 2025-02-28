@@ -58,6 +58,7 @@ export async function getResponse(args: {
         method: args.method,
         headers: args.headers,
         body: args.body,
+        // @ts-ignore
         timeout,
         size: args.size || 10 * 1024 * 1024,
         agent: getAgentByUrl,
@@ -68,8 +69,18 @@ export async function getResponse(args: {
         throw new StatusError(`${res.status} ${res.statusText}`, res.status, res.statusText);
     }
 
-    if (res.redirected && !isValidUrl(res.url)) {
-        throw new StatusError("Invalid URL", 400);
+    if (res.redirected) {
+        // リダイレクト先が不正なURLだったらエラー
+        if (!isValidUrl(res.url)) {
+            throw new StatusError("Invalid URL", 400);
+        }
+
+        // 同一ドメインでなかったらエラー
+        const originalUrl = new URL(args.url);
+        const redirectedUrl = new URL(res.url);
+        if (originalUrl.hostname !== redirectedUrl.hostname) {
+            throw new StatusError("Redirect to another domain is not allowed", 400);
+        }
     }
 
     return res;
