@@ -81,6 +81,7 @@ export async function downloadUrl(url: string, path: string): Promise<void> {
         await pipeline(req, fs.createWriteStream(path));
     } catch (e) {
         if (e instanceof Got.HTTPError) {
+            // @ts-ignore
             throw new StatusError(`${e.response.statusCode} ${e.response.statusMessage}`, e.response.statusCode, e.response.statusMessage);
         } else {
             throw e;
@@ -98,5 +99,11 @@ function isPrivateIp(ip: string): boolean {
         }
     }
 
-    return PrivateIp(ip);
+    const isPrivate = PrivateIp(ip);
+    if (typeof isPrivate === "undefined") {
+        // undefinedならとりあえずプライベートアドレスとして拒否する
+        return true;
+    }
+
+    return isPrivate;
 }
