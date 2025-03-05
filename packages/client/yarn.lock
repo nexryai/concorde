@@ -509,17 +509,17 @@
   resolved "https://registry.yarnpkg.com/@rollup/rollup-win32-x64-msvc/-/rollup-win32-x64-msvc-4.34.8.tgz#4cdb2cfae69cdb7b1a3cc58778e820408075e928"
   integrity sha512-U0FaE5O1BCpZSeE6gBl3c5ObhePQSfk9vDRToMmTkbhCOgW4jqvtS5LGyQ76L1fH8sM0keRp4uDTsbjiUyjk0g==
 
-"@tabler/icons-webfont@3.30.0":
-  version "3.30.0"
-  resolved "https://registry.yarnpkg.com/@tabler/icons-webfont/-/icons-webfont-3.30.0.tgz#5a3eee56db2415b284ce3024dd8ef428e3700cdc"
-  integrity sha512-0JpX/0vV0VcnTbadS+qmHc8T9X37HoOgS4Wr8dmiBF3NLv83Q2Ll3KZM3gRIM1Um1cfZDCiR5Gqf28KZW6tJsA==
+"@tabler/icons-webfont@3.31.0":
+  version "3.31.0"
+  resolved "https://registry.yarnpkg.com/@tabler/icons-webfont/-/icons-webfont-3.31.0.tgz#5a3d04929176879247a457590cf163f46fbc7480"
+  integrity sha512-0a3Uhj9nKU5kYz6/MUIGuX7kRbbrnOvVL3LGnbIcW/fmEQMgVRN0lkXdeIVkIL6/JKDzI2zSm3X5I+hLIpzLog==
   dependencies:
-    "@tabler/icons" "3.30.0"
+    "@tabler/icons" "3.31.0"
 
-"@tabler/icons@3.30.0":
-  version "3.30.0"
-  resolved "https://registry.yarnpkg.com/@tabler/icons/-/icons-3.30.0.tgz#4f80f52cc6355b440a4ee0dadd4c3e3775e50663"
-  integrity sha512-c8OKLM48l00u9TFbh2qhSODMONIzML8ajtCyq95rW8vzkWcBrKRPM61tdkThz2j4kd5u17srPGIjqdeRUZdfdw==
+"@tabler/icons@3.31.0":
+  version "3.31.0"
+  resolved "https://registry.yarnpkg.com/@tabler/icons/-/icons-3.31.0.tgz#92d39dc336f2e3e312170420b00ffe9ca474925e"
+  integrity sha512-dblAdeKY3+GA1U+Q9eziZ0ooVlZMHsE8dqP0RkwvRtEsAULoKOYaCUOcJ4oW1DjWegdxk++UAt2SlQVnmeHv+g==
 
 "@twemoji/parser@15.0.0":
   version "15.0.0"
