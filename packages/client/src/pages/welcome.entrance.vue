@@ -16,23 +16,14 @@
                 <h1>
                     <span class="text">{{ instanceName }}</span>
                 </h1>
-                <div class="about">
-                    <div class="desc">
-                        <MkA @click="os.pageWindow('/about');"> <i class="ti ti-info-circle"></i> {{ i18n.ts.instanceInfo }} </MkA>
-                    </div>
-                </div>
                 <div class="entrance-form">
                     <MkSignin v-if="!dontHaveAccount" @login="onLogin"/>
                     <MkSignup v-else class="signup-form" @signup="onLogin" @signup-email-pending="onSignupEmailPending"/>
                 </div>
                 <div class="action">
-                    <p> - or - </p>
-                    <div v-if="meta.disableRegistration" class="warn">
-                        <MkInfo warn>{{ i18n.ts.invitationRequiredToRegister }}</MkInfo>
-                    </div>
-                    <MkButton v-if="!dontHaveAccount" inline rounded gradate data-cy-signup style="margin-right: 12px;" @click="signup()">{{ i18n.ts.signup }}</MkButton>
-                    <MkButton v-else inline rounded gradate data-cy-signup style="margin-right: 12px;" @click="signin()">{{ i18n.ts.login }}</MkButton>
-                    <MkButton inline rounded data-cy-signin style="margin-left: 12px;" @click="jumpToExplore()">{{ i18n.ts.explore }}</MkButton>
+                    <MkA v-if="!dontHaveAccount" style="margin-right: 12px;" @click="signup()"><i class="ti ti-user-plus"></i> {{ i18n.ts.signup }}</MkA>
+                    <MkA v-else style="margin-right: 12px;" @click="signin()"><i class="ti ti-arrow-back-up"></i> {{ i18n.ts.login }}</MkA>
+                    <MkA @click="os.pageWindow('/about');"><i class="ti ti-info-circle"></i> {{ i18n.ts.instanceInfo }}</MkA>
                 </div>
             </div>
         </div>
@@ -42,12 +33,11 @@
 
 <script lang="ts" setup>
 import { } from "vue";
-import MkButton from "@/components/MkButton.vue";
 import MkFeaturedPhotos from "@/components/MkFeaturedPhotos.vue";
 import { instanceName } from "@/config";
 import * as os from "@/os";
 import { i18n } from "@/i18n";
-import MkInfo from "@/components/MkInfo.vue";
+import MkA from "@/components/global/MkA.vue";
 import MkSignin from "@/components/MkSignin.vue";
 import MkSignup from "@/components/MkSignup.vue";
 import { login } from "@/account";
@@ -66,10 +56,6 @@ function signup() {
 
 function signin() {
     dontHaveAccount = false;
-}
-
-function jumpToExplore() {
-    window.location.href = "/explore";
 }
 
 function showMenu(ev) {

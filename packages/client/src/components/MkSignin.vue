@@ -12,7 +12,6 @@
             </MkInput>
             <MkInput v-if="!user || user && !user.usePasswordLessLogin" v-model="password" class="_formBlock" :placeholder="i18n.ts.password" type="password" :with-password-toggle="true" required data-cy-signin-password>
                 <template #prefix><i class="ti ti-lock"></i></template>
-                <template #caption><button class="_textButton" type="button" @click="resetPassword">{{ i18n.ts.forgotPassword }}</button></template>
             </MkInput>
             <MkButton class="_formBlock" type="submit" primary :disabled="signing" style="margin: 0 auto;">{{ signing ? i18n.ts.loggingIn : i18n.ts.login }}</MkButton>
         </div>
@@ -234,11 +233,6 @@ function loginFailed(err) {
     challengeData = null;
     totpLogin = false;
     signing = false;
-}
-
-function resetPassword() {
-    os.popup(defineAsyncComponent(() => import("@/components/MkForgotPassword.vue")), {}, {
-    }, "closed");
 }
 </script>
 
