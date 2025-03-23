@@ -108,7 +108,7 @@
 		"xev": "3.0.2"
 	},
 	"devDependencies": {
-		"@types/bcryptjs": "2.4.6",
+		"@types/bcryptjs": "3.0.0",
 		"@types/bull": "4.10.4",
 		"@types/cbor": "6.0.4",
 		"@types/co-body": "6.1.3",
