@@ -9,7 +9,6 @@ nexryaiによるMisskey v12フォーク
 ghcr.io/nexryai/concorde
 ```
 
-**セキュリティとCIのパフォーマンス上の理由から、Docker Hubのイメージは新しいレートリミットの導入と同時に削除されます。**
 
 ## motive
  - 中小規模のサーバーに最適化された軽量なMisskey v12のフォークを開発維持すること
