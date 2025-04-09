@@ -1052,6 +1052,13 @@ fsevents@~2.3.2, fsevents@~2.3.3:
   resolved "https://registry.yarnpkg.com/fsevents/-/fsevents-2.3.3.tgz#cac6407785d03675a2a5e1a5305c697b347d90d6"
   integrity sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==
 
+get-tsconfig@^4.10.0:
+  version "4.10.0"
+  resolved "https://registry.yarnpkg.com/get-tsconfig/-/get-tsconfig-4.10.0.tgz#403a682b373a823612475a4c2928c7326fc0f6bb"
+  integrity sha512-kGzZ3LWWQcGIAmg6iWvXn0ei6WDtV26wzHRMwDSzmAbcXrTEXxHy6IehI6/4eT6VRKyMP1eF1VqwrVUmE/LR7A==
+  dependencies:
+    resolve-pkg-maps "^1.0.0"
+
 glob-parent@^5.1.2, glob-parent@~5.1.0:
   version "5.1.2"
   resolved "https://registry.yarnpkg.com/glob-parent/-/glob-parent-5.1.2.tgz#869832c58034fe68a4093c17dc15e8340d8401c4"
@@ -1378,6 +1385,11 @@ readdirp@~3.3.0:
   dependencies:
     picomatch "^2.0.7"
 
+resolve-pkg-maps@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/resolve-pkg-maps/-/resolve-pkg-maps-1.0.0.tgz#616b3dc2c57056b5588c31cdf4b3d64db133720f"
+  integrity sha512-seS2Tj26TBVOC2NIc2rOe2y2ZO7efxITtLZcGSOnHHNOQ7CkiUBfw0Iw2ck6xkIhPwLhKNLS8BO+hEpngQlqzw==
+
 reusify@^1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/reusify/-/reusify-1.0.4.tgz#90da382b1e126efc02146e90845a88db12925d76"
@@ -1528,13 +1540,14 @@ to-regex-range@^5.0.1:
   dependencies:
     is-number "^7.0.0"
 
-tsc-alias@1.8.11:
-  version "1.8.11"
-  resolved "https://registry.yarnpkg.com/tsc-alias/-/tsc-alias-1.8.11.tgz#acd3f7680a69ff82bed2df2ef26072e445c15470"
-  integrity sha512-2DuEQ58A9Rj2NE2c1+/qaGKlshni9MCK95MJzRGhQG0CYLw0bE/ACgbhhTSf/p1svLelwqafOd8stQate2bYbg==
+tsc-alias@1.8.14:
+  version "1.8.14"
+  resolved "https://registry.yarnpkg.com/tsc-alias/-/tsc-alias-1.8.14.tgz#cbe9566bcb4b014c32d0704ac495ab3361436edc"
+  integrity sha512-abPL5KpLkZCR06QkgyOBaswNPgNL/Ub/am16tvQ0kTsmPx3FEhBOAsvIPUU8OkYrLv0JlzJEaJ1r6XkJBIQvYg==
   dependencies:
     chokidar "^3.5.3"
     commander "^9.0.0"
+    get-tsconfig "^4.10.0"
     globby "^11.0.4"
     mylas "^2.1.9"
     normalize-path "^3.0.0"
