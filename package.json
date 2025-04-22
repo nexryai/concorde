@@ -35,7 +35,7 @@
 		"terser": "5.39.0"
 	},
 	"devDependencies": {
-		"@eslint/js": "9.23.0",
+		"@eslint/js": "9.25.1",
 		"cross-env": "7.0.3",
 		"eslint": "9.25.1",
 		"globals": "16.0.0",
