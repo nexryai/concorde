@@ -1573,10 +1573,10 @@ twemoji-parser@14.0.0:
   resolved "https://registry.yarnpkg.com/twemoji-parser/-/twemoji-parser-14.0.0.tgz#13dabcb6d3a261d9efbf58a1666b182033bf2b62"
   integrity sha512-9DUOTGLOWs0pFWnh1p6NF+C3CkQ96PWmEFwhOVmT3WbecRC+68AIqpsnJXygfkFcp4aXbOp8Dwbhh/HQgvoRxA==
 
-typescript@5.8.2:
-  version "5.8.2"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.8.2.tgz#8170b3702f74b79db2e5a96207c15e65807999e4"
-  integrity sha512-aJn6wq13/afZp/jT9QZmwEjDqqvSGp1VT5GVg+f/t6/oVyrgXM6BY1h9BRh/O5p3PlUPAe+WuiEZOmb/49RqoQ==
+typescript@5.8.3:
+  version "5.8.3"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.8.3.tgz#92f8a3e5e3cf497356f4178c34cd65a7f5e8440e"
+  integrity sha512-p1diW6TqL9L07nNxvRMM7hMMw4c5XOo/1ibL4aAIGmSAt9slTE1Xgw5KWuof2uTOvCg9BY7ZRi+GaF+7sfgPeQ==
 
 ufo@^1.5.4:
   version "1.5.4"
