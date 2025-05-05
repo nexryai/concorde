@@ -21,7 +21,7 @@
 		"@sinonjs/fake-timers": "14.0.0",
 		"abort-controller": "3.0.0",
 		"ajv": "8.17.1",
-		"archiver": "6.0.2",
+		"archiver": "7.0.1",
 		"argon2": "0.41.1",
 		"autobind-decorator": "2.4.0",
 		"aws-sdk": "2.1692.0",
