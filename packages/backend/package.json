@@ -15,7 +15,7 @@
 	"dependencies": {
 		"@discordapp/twemoji": "15.1.0",
 		"@koa/cors": "5.0.0",
-		"@koa/multer": "3.0.2",
+		"@koa/multer": "3.1.0",
 		"@koa/router": "13.1.0",
 		"@peertube/http-signature": "1.7.0",
 		"@sinonjs/fake-timers": "14.0.0",
