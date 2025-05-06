@@ -40,7 +40,7 @@
 		"eslint": "9.25.1",
 		"globals": "16.0.0",
 		"typescript": "5.8.3",
-		"typescript-eslint": "8.31.0"
+		"typescript-eslint": "8.32.0"
 	},
 	"packageManager": "yarn@1.22.22+sha1.ac34549e6aa8e7ead463a7407e1c7390f61a6610"
 }
