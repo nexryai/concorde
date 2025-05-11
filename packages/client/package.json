@@ -29,7 +29,7 @@
 		"date-fns": "4.1.0",
 		"escape-regexp": "0.0.1",
 		"eventemitter3": "5.0.1",
-		"idb-keyval": "6.2.1",
+		"idb-keyval": "6.2.2",
 		"insert-text-at-cursor": "0.3.0",
 		"json5": "2.2.3",
 		"katex": "0.16.22",
