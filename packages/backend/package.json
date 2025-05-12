@@ -68,7 +68,7 @@
 		"multer": "1.4.5-lts.1",
 		"nested-property": "4.0.0",
 		"node-fetch": "3.3.2",
-		"otpauth": "9.3.6",
+		"otpauth": "9.4.0",
 		"parse5": "7.3.0",
 		"pg": "8.14.1",
 		"private-ip": "3.0.2",
