@@ -149,7 +149,7 @@
 		"@types/web-push": "3.6.4",
 		"@types/ws": "8.18.0",
 		"cross-env": "7.0.3",
-		"execa": "9.5.2",
+		"execa": "9.6.0",
 		"typescript": "5.8.3"
 	}
 }
