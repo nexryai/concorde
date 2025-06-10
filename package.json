@@ -32,7 +32,7 @@
 		"execa": "9.6.0",
 		"js-yaml": "4.1.0",
 		"postcss": "^8.5.3",
-		"terser": "5.39.2"
+		"terser": "5.42.0"
 	},
 	"devDependencies": {
 		"@eslint/js": "9.27.0",
