@@ -1944,10 +1944,10 @@ svgo@^3.3.2:
     csso "^5.0.5"
     picocolors "^1.0.0"
 
-terser@5.39.2:
-  version "5.39.2"
-  resolved "https://registry.yarnpkg.com/terser/-/terser-5.39.2.tgz#5a1626030724a672e2e5b5c9cd9070308c20e8f9"
-  integrity sha512-yEPUmWve+VA78bI71BW70Dh0TuV4HHd+I5SHOAfS1+QBOmvmCiiffgjR8ryyEd3KIfvPGFqoADt8LdQ6XpXIvg==
+terser@5.43.0:
+  version "5.43.0"
+  resolved "https://registry.yarnpkg.com/terser/-/terser-5.43.0.tgz#f9cac3cc347020d6ffafdbaa3698a5257b7cb690"
+  integrity sha512-CqNNxKSGKSZCunSvwKLTs8u8sGGlp27sxNZ4quGh0QeNuyHM0JSEM/clM9Mf4zUp6J+tO2gUXhgXT2YMMkwfKQ==
   dependencies:
     "@jridgewell/source-map" "^0.3.3"
     acorn "^8.14.0"
