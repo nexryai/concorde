@@ -70,7 +70,7 @@
 		"node-fetch": "3.3.2",
 		"otpauth": "9.4.0",
 		"parse5": "7.3.0",
-		"pg": "8.14.1",
+		"pg": "8.16.2",
 		"private-ip": "3.0.2",
 		"probe-image-size": "7.2.3",
 		"promise-limit": "2.7.0",
