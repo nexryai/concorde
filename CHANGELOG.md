@@ -1,3 +1,9 @@
+## 12.25Q3.1
+ - BREAKING: Node.js 18のサポートを削除
+ - Feat: ログインUIの改善
+ - Chore: 不要な依存関係を削除
+
+
 ## 12.25Q1.3
  - BREAKING: DockerイメージのレジストリをGHCRに移動
  - Chore: 依存関係の更新
