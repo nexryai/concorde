@@ -74,7 +74,7 @@ function wrap(url: string | undefined) {
     if (url == null) return null;
 
     return `${config.url}/proxy/preview.webp?${query({
-		url,
-		preview: '1'
-	})}`
+        url,
+        preview: "1"
+    })}`;
 }
