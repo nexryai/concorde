@@ -7,14 +7,12 @@
 	"scripts": {
 		"build": "tsc",
 		"tsd": "tsd",
-		"api": "npx api-extractor run --local --verbose",
-		"api-prod": "npx api-extractor run --verbose",
         "jest": "jest --coverage --detectOpenHandles",
 		"test": "npm run jest && npm run tsd"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/misskey-dev/misskey.js.git"
+		"url": "git+https://github.com/nexryai/concorde/tree/nightly/packages/misskey-js"
 	},
 	"devDependencies": {
 		"@types/jest": "^29.5.14",
