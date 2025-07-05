@@ -35,14 +35,12 @@ export const urlPreviewHandler = async (ctx: Koa.Context) => {
 
     logger.info(meta.summalyProxy
         ? `(Proxy) Getting preview of ${url}@${lang} ...`
-        : `Getting preview of ${url}@${lang} ...`);
+        : `Getting preview of ${url}@${lang} ...`
+    );
 
     try {
-        // DDoS状態になるのはアレなので強制的にどっかしらのプロキシを使うようにする
-        let summalyProxy = meta.summalyProxy;
-        if (summalyProxy == null) {
-            summalyProxy = "https://summaly.sda1.net";
-        }
+        // DDoS状態になるのを避けるため、強制的にどっかしらのプロキシを使うようにする
+        const summalyProxy = meta.summalyProxy ?? "https://summaly.sda1.net";
 
         const summary: Summary = await getJson(`${summalyProxy}?${query({
             url: url,
@@ -51,11 +49,14 @@ export const urlPreviewHandler = async (ctx: Koa.Context) => {
 
         logger.succ(`Got preview of ${url}: ${summary.title}`);
 
-        summary.icon = wrap(summary.icon);
-        summary.thumbnail = wrap(summary.thumbnail);
+        summary.icon = wrap(summary.icon) ?? undefined;
+        summary.thumbnail = wrap(summary.thumbnail) ?? undefined;
 
-        if (summary.player) summary.player.url = sanitizeUrl(summary.player.url);
-        summary.url = sanitizeUrl(summary.url);
+        const sanitizedPlayerUrl = wrap(summary.player?.url) ?? null;
+        if (summary.player && sanitizedPlayerUrl) summary.player.url = sanitizedPlayerUrl;
+        
+        // 不適切なSummaly APIの実装を使用していない限りsanitizeで失敗することはないはずだけど念の為
+        summary.url = sanitizeUrl(summary.url)!;
 
         // Cache 7days
         ctx.set("Cache-Control", "max-age=604800, immutable");
@@ -69,19 +70,11 @@ export const urlPreviewHandler = async (ctx: Koa.Context) => {
     }
 };
 
-function wrap(url: string | null) {
+function wrap(url: string | undefined) {
     if (url == null) return null;
 
-    if (url.match(/^https?:/)) {
-        return `${config.url}/proxy/preview.webp?${query({
-            url,
-            preview: "1",
-        })}`;
-    }
-
-    if (url.match(/^data:/)) {
-        return url;
-    }
-
-    return null;
+    return `${config.url}/proxy/preview.webp?${query({
+		url,
+		preview: '1'
+	})}`
 }
