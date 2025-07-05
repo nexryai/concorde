@@ -1,22 +1,22 @@
 <template>
-<div v-if="playerEnabled" class="player" :style="`padding: ${(player.height || 0) / (player.width || 1) * 100}% 0 0`">
+<div v-if="playerEnabled && player.url" class="player" :style="`padding: ${(player.height || 0) / (player.width || 1) * 100}% 0 0`">
     <button class="disablePlayer" :title="i18n.ts.disablePlayer" @click="playerEnabled = false"><i class="ti ti-x"></i></button>
     <iframe :src="player.url + (player.url.match(/\?/) ? '&autoplay=1&auto_play=1' : '?autoplay=1&auto_play=1')" :width="player.width || '100%'" :heigth="player.height || 250" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen/>
 </div>
 <div v-else v-size="{ max: [400, 350] }" class="mk-url-preview">
     <transition :name="$store.state.animation ? 'zoom' : ''" mode="out-in">
-        <component :is="self ? 'MkA' : 'a'" v-if="!fetching" class="link" :class="{ compact }" :[attr]="self ? url.substr(local.length) : url" rel="nofollow noopener" :target="target" :title="url">
+        <component :is="self ? 'MkA' : 'a'" v-if="!fetching" class="link" :class="{ compact }" :[attr]="maybeRelativeUrl" rel="nofollow noopener" :target="target" :title="url">
             <div v-if="thumbnail" class="thumbnail" :style="`background-image: url('${thumbnail}')`">
                 <button v-if="!playerEnabled && player.url" class="_button" :title="i18n.ts.enablePlayer" @click.prevent="playerEnabled = true"><i class="ti ti-player-play"></i></button>
             </div>
             <article>
                 <header>
-                    <h1 :title="title">{{ title }}</h1>
+                    <h1 :title="title ?? 'Untitled'">{{ title }}</h1>
                 </header>
                 <p v-if="description" :title="description">{{ description.length > 85 ? description.slice(0, 85) + '…' : description }}</p>
                 <footer>
                     <img v-if="icon" class="icon" :src="icon"/>
-                    <p :title="sitename">{{ sitename }}</p>
+                    <p :title="sitename ?? 'unknown'">{{ sitename }}</p>
                 </footer>
             </article>
         </component>
@@ -25,9 +25,10 @@
 </template>
 
 <script lang="ts" setup>
-import { onMounted, onUnmounted } from "vue";
+import { onUnmounted, ref } from "vue";
 import { url as local, lang } from "@/config";
 import { i18n } from "@/i18n";
+import { maybeMakeRelative } from "@/scripts/url";
 
 const props = withDefaults(defineProps<{
 	url: string;
@@ -38,31 +39,36 @@ const props = withDefaults(defineProps<{
     compact: false,
 });
 
-const self = props.url.startsWith(local);
+const maybeRelativeUrl = maybeMakeRelative(props.url, local);
+const self = maybeRelativeUrl !== props.url;
 const attr = self ? "to" : "href";
 const target = self ? null : "_blank";
-let fetching = $ref(true);
-let title = $ref<string | null>(null);
-let description = $ref<string | null>(null);
-let thumbnail = $ref<string | null>(null);
-let icon = $ref<string | null>(null);
-let sitename = $ref<string | null>(null);
-let player = $ref({
+const fetching = ref(true);
+const title = ref<string | null>(null);
+const description = ref<string | null>(null);
+const thumbnail = ref<string | null>(null);
+const icon = ref<string | null>(null);
+const sitename = ref<string | null>(null);
+const player = ref({
     url: null,
     width: null,
     height: null,
+} as {
+    url: string | null;
+    width: number | null;
+    height: number | null;
 });
-let playerEnabled = $ref(false);
-let tweetId = $ref<string | null>(null);
-let tweetExpanded = $ref(props.detail);
+const playerEnabled = ref(false);
+const tweetId = ref<string | null>(null);
+const tweetHeight = ref<number | null>(null);
+
 const embedId = `embed${Math.random().toString().replace(/\D/,"")}`;
-let tweetHeight = $ref(150);
 
 const requestUrl = new URL(props.url);
 
 if (requestUrl.hostname === "twitter.com" || requestUrl.hostname === "mobile.twitter.com") {
     const m = requestUrl.pathname.match(/^\/.+\/status(?:es)?\/(\d+)/);
-    if (m) tweetId = m[1];
+    if (m) tweetId.value = m[1];
 }
 
 if (requestUrl.hostname === "music.youtube.com" && requestUrl.pathname.match("^/(?:watch|channel)")) {
@@ -76,13 +82,13 @@ requestUrl.hash = "";
 fetch(`/url?url=${encodeURIComponent(requestUrl.href)}&lang=${requestLang}`).then(res => {
     res.json().then(info => {
         if (info.url == null) return;
-        title = info.title;
-        description = info.description;
-        thumbnail = info.thumbnail;
-        icon = info.icon;
-        sitename = info.sitename;
-        fetching = false;
-        player = info.player;
+        title.value = info.title;
+        description.value = info.description;
+        thumbnail.value = info.thumbnail;
+        icon.value = info.icon;
+        sitename.value = info.sitename;
+        fetching.value = false;
+        player.value = info.player;
     });
 });
 
@@ -92,7 +98,7 @@ function adjustTweetHeight(message: any) {
     if (embed?.method !== "twttr.private.resize") return;
     if (embed?.id !== embedId) return;
     const height = embed?.params[0]?.height;
-    if (height) tweetHeight = height;
+    if (height) tweetHeight.value = height;
 }
 
 (window as any).addEventListener("message", adjustTweetHeight);

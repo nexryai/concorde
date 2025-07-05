@@ -1,6 +1,6 @@
 <template>
 <component
-    :is="self ? 'MkA' : 'a'" ref="el" class="xlcxczvw _link" :[attr]="self ? url.substr(local.length) : url" :rel="rel" :target="target"
+    :is="self ? 'MkA' : 'a'" ref="el" class="xlcxczvw _link" :[attr]="maybeRelativeUrl" :rel="rel" :target="target"
     :title="url"
 >
     <slot></slot>
@@ -9,9 +9,10 @@
 </template>
 
 <script lang="ts" setup>
-import { defineAsyncComponent } from "vue";
+import { defineAsyncComponent, ref } from "vue";
 import { url as local } from "@/config";
 import { useTooltip } from "@/scripts/use-tooltip";
+import { maybeMakeRelative } from "@/scripts/url";
 import * as os from "@/os";
 
 const props = withDefaults(defineProps<{
@@ -20,13 +21,14 @@ const props = withDefaults(defineProps<{
 }>(), {
 });
 
-const self = props.url.startsWith(local);
+const maybeRelativeUrl = maybeMakeRelative(props.url, local);
+const self = maybeRelativeUrl !== props.url;
 const attr = self ? "to" : "href";
 const target = self ? null : "_blank";
 
-const el = $ref();
+const el = ref();
 
-useTooltip($$(el), (showing) => {
+useTooltip(el, (showing) => {
     os.popup(defineAsyncComponent(() => import("@/components/MkUrlPreviewPopup.vue")), {
         showing,
         url: props.url,
