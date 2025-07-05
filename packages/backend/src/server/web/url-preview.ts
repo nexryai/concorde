@@ -52,7 +52,7 @@ export const urlPreviewHandler = async (ctx: Koa.Context) => {
         summary.icon = wrap(summary.icon) ?? undefined;
         summary.thumbnail = wrap(summary.thumbnail) ?? undefined;
 
-        const sanitizedPlayerUrl = wrap(summary.player?.url) ?? null;
+        const sanitizedPlayerUrl = sanitizeUrl(summary.player?.url) ?? null;
         if (summary.player && sanitizedPlayerUrl) summary.player.url = sanitizedPlayerUrl;
         
         // 不適切なSummaly APIの実装を使用していない限りsanitizeで失敗することはないはずだけど念の為
