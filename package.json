@@ -1,7 +1,7 @@
 {
 	"name": "concorde",
-	"version": "12.25Q1.3",
-	"codename": "HarmonyBird",
+	"version": "12.25Q3.1",
+	"codename": "Bartholos",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/nexryai/concorde"
