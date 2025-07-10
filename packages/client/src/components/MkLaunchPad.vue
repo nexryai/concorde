@@ -31,7 +31,6 @@ const emit = defineEmits<{
 
 const items = [
     { type: "link", text: i18n.ts.clips, icon: "ti ti-paperclip", to: "/my/clips", action: null, indicate: false },
-    { type: "link", text: i18n.ts.announcements, icon: "ti ti-speakerphone", to: "/announcements", action: null, indicate: false },
     $i != null && ($i.isLocked || $i.hasPendingReceivedFollowRequest) ? {
         type: "link",
         text: i18n.ts.followRequests,

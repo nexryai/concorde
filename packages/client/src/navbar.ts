@@ -27,12 +27,6 @@ export const navbarItemDef = reactive({
         icon: "ti ti-hash",
         to: "/explore",
     },
-    announcements: {
-        title: "announcements",
-        icon: "ti ti-speakerphone",
-        indicated: computed(() => $i != null && $i.hasUnreadAnnouncement),
-        to: "/announcements",
-    },
     clips: {
         title: "clip",
         icon: "ti ti-paperclip",
