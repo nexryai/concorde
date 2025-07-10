@@ -22,25 +22,14 @@
 <script lang="ts" setup>
 import { computed, ref } from "vue";
 import MkModal from "@/components/MkModal.vue";
-import { navbarItemDef } from "@/navbar";
-import { defaultStore } from "@/store";
 import { i18n } from "@/i18n";
-import { deviceKind } from "@/scripts/device-kind";
 import { $i } from "@/account";
-
-const props = withDefaults(defineProps<{
-	src?: HTMLElement;
-	anchor?: { x: string; y: string; };
-    isMobileMode?: boolean;
-}>(), {
-    anchor: () => ({ x: "right", y: "center" }),
-});
 
 const emit = defineEmits<{
 	(ev: "closed"): void;
 }>();
 
-const mobileItems = [
+const items = [
     { type: "link", text: i18n.ts.clips, icon: "ti ti-paperclip", to: "/my/clips", action: null, indicate: false },
     { type: "link", text: i18n.ts.announcements, icon: "ti ti-speakerphone", to: "/announcements", action: null, indicate: false },
     $i != null && ($i.isLocked || $i.hasPendingReceivedFollowRequest) ? {
@@ -61,22 +50,9 @@ const mobileItems = [
     { type: "link", text: i18n.ts.settings, icon: "ti ti-settings", to: "/settings", action: null, indicate: false },
 ];
 
-const preferedModalType = (deviceKind === "desktop" && props.src != null) ? "popup" :
-    deviceKind === "smartphone" ? "drawer" :
-    "dialog";
+const preferedModalType = "drawer";
 
 const modal = ref<InstanceType<typeof MkModal>>();
-
-const menu = defaultStore.state.menu;
-
-const items = props.isMobileMode ? mobileItems : Object.keys(navbarItemDef).filter(k => !menu.includes(k)).map(k => navbarItemDef[k]).filter(def => def.show == null ? true : def.show).map(def => ({
-    type: def.to ? "link" : "button",
-    text: i18n.ts[def.title],
-    icon: def.icon,
-    to: def.to,
-    action: def.action,
-    indicate: def.indicated,
-}));
 
 function close() {
     modal.value?.close();
