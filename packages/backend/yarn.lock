@@ -77,12 +77,12 @@
   resolved "https://registry.yarnpkg.com/@csstools/css-tokenizer/-/css-tokenizer-3.0.3.tgz#a5502c8539265fecbd873c1e395a890339f119c2"
   integrity sha512-UJnjoFsmxfKUdNYdWgOB0mWUypuLvAfQPH1+pyvRJs6euowbFkFC6P13w1l8mJyi3vxYMxc9kld5jZEGRQs6bw==
 
-"@discordapp/twemoji@15.1.0":
-  version "15.1.0"
-  resolved "https://registry.yarnpkg.com/@discordapp/twemoji/-/twemoji-15.1.0.tgz#f98bb4d831375d63787821f13c240e000807b808"
-  integrity sha512-QdpV4ifTONAXvDjRrMohausZeGrQ1ac/Ox6togUh6Xl3XKJ/KAaMMuAEi0qsb0wDwoVTSZBll5Y6+N3hB2ktBw==
+"@discordapp/twemoji@16.0.1":
+  version "16.0.1"
+  resolved "https://registry.yarnpkg.com/@discordapp/twemoji/-/twemoji-16.0.1.tgz#8af227ed1243e65d12582850ff94f287f9d2cb0d"
+  integrity sha512-figLiBWzjS5cyrAjLaGjM8AAaowO3qvK8rg5bA2dElB4qsaPMvBVlFDMO2d3x+nC1igt7kgWH4dvNmvvUHUF8w==
   dependencies:
-    "@twemoji/parser" "15.1.0"
+    "@twemoji/parser" "16.0.0"
     fs-extra "^8.0.1"
     jsonfile "^5.0.0"
     universalify "^0.1.2"
@@ -269,10 +269,10 @@
   dependencies:
     vary "^1.1.2"
 
-"@koa/multer@3.1.0":
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/@koa/multer/-/multer-3.1.0.tgz#64b12f173d9c8d88c4114574ed67d2c8f5acdba8"
-  integrity sha512-ETf4OLpOew9XE9lyU+5HIqk3TCmdGAw9pUXgxzrlYip+PkxLGoU4meiVTxiW4B6lxdBNijb3DFQ7M2woLcDL1g==
+"@koa/multer@4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@koa/multer/-/multer-4.0.0.tgz#48e56bf41d48c173430338df859a1f46e81ac784"
+  integrity sha512-BY6hys3WVX1yL/gcfKWu94z1fJ6ayG1DEEw/s82DnulkaTbumwjF6XqSfNLKFcs8lnJb2QfMJ4DyK4bmF1NDZw==
 
 "@koa/router@13.1.1":
   version "13.1.1"
@@ -501,10 +501,10 @@
   resolved "https://registry.yarnpkg.com/@twemoji/parser/-/parser-15.0.0.tgz#8ae9749659ef524b5f0e6ee1412d0e48865e77bf"
   integrity sha512-lh9515BNsvKSNvyUqbj5yFu83iIDQ77SwVcsN/SnEGawczhsKU6qWuogewN1GweTi5Imo5ToQ9s+nNTf97IXvg==
 
-"@twemoji/parser@15.1.0":
-  version "15.1.0"
-  resolved "https://registry.yarnpkg.com/@twemoji/parser/-/parser-15.1.0.tgz#ad83b69fcd1fbcb705022f2b85d73e127ad5f335"
-  integrity sha512-3HTiSxPvkWUJ4kZeCvwyKlIwkpTUfBOk6igpBBRQni58ceQMv5YK4smkc8vX/eqOlMMNER/9qobv+Q6Q8LVrqA==
+"@twemoji/parser@16.0.0":
+  version "16.0.0"
+  resolved "https://registry.yarnpkg.com/@twemoji/parser/-/parser-16.0.0.tgz#289f610ed73204f46141a94180566cf3c1f86f81"
+  integrity sha512-jmuIjkp3OIaEemwMy3sArBwZSuZkRqmueGwRe2Zk4cFzbUJISFBJSZLDUUBNIgq3c+nY49ideYN2OiII6JUqwA==
 
 "@types/accepts@*":
   version "1.3.5"
@@ -2787,10 +2787,10 @@ is-stream@^4.0.1:
   resolved "https://registry.yarnpkg.com/is-stream/-/is-stream-4.0.1.tgz#375cf891e16d2e4baec250b85926cffc14720d9b"
   integrity sha512-Dnz92NInDqYckGEUJv689RbRiTSEHCQ7wOVeALbkOz999YpqT46yMRIGtSNl2iCL1waAZSx40+h59NV/EwzV/A==
 
-is-svg@6.0.0:
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/is-svg/-/is-svg-6.0.0.tgz#e03ff43cb14d5de1254642d70d879f49534e4fb8"
-  integrity sha512-dGyV+26JXUyoWF8Su3LfFS9tcmrR/uYYSyABE66iv4zJnS77y8T3PZB0nWRKOJJiU1lelGMGuYMylqrFu8D7yQ==
+is-svg@6.1.0:
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/is-svg/-/is-svg-6.1.0.tgz#b75936327dcbd3fa3af1f1098d5390245fbdd8b1"
+  integrity sha512-i7YPdvYuSCYcaLQrKwt8cvKTlwHcdA6Hp8N9SO3Q5jIzo8x6kH3N47W0BvPP7NdxVBmIHx7X9DK36czYYW7lHg==
   dependencies:
     "@file-type/xml" "^0.4.3"
 
