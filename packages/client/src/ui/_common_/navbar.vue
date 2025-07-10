@@ -63,11 +63,9 @@ import { useInterval } from "@/scripts/use-interval";
 
 const showOnlineUsersOnNavbar = ref(defaultStore.state.showOnlineUsersOnNavbar);
 
-const menu = (() => {
-    return Object.keys(navbarItemDef).filter(item => {
-        return navbarItemDef[item].show !== false && (navbarItemDef[item].to || navbarItemDef[item].action);
-    });
-})();
+const menu = Object.keys(navbarItemDef).filter(item => {
+    return navbarItemDef[item].show !== false && (navbarItemDef[item].to || navbarItemDef[item].action);
+});
 
 function openAccountMenu(ev: MouseEvent) {
     openAccountMenu_({
