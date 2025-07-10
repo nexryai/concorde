@@ -272,11 +272,11 @@ export const defaultStore = markRaw(new Storage("base", {
     },
     enableLTL: {
         where: "account",
-        default: true,
+        default: false,
     },
     enableGTL: {
         where: "account",
-        default: true,
+        default: false,
     },
     enablePTL: {
         where: "device",
