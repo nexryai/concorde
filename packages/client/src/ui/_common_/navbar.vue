@@ -51,7 +51,7 @@
 </template>
 
 <script lang="ts" setup>
-import { computed, defineAsyncComponent, ref, toRef } from "vue";
+import { ref } from "vue";
 import { host } from "@/config";
 import * as os from "@/os";
 import { navbarItemDef } from "@/navbar";

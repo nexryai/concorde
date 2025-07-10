@@ -75,16 +75,6 @@ export const defaultStore = markRaw(new Storage("base", {
         where: "account",
         default: [] as string[],
     },
-
-    menu: {
-        where: "account",
-        default: [
-            "notifications",
-            "followRequests",
-            "drive",
-            "explore",
-        ],
-    },
     visibility: {
         where: "deviceAccount",
         default: "public" as "public" | "home" | "followers" | "specified",

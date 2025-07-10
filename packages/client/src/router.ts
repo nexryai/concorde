@@ -79,10 +79,6 @@ export const routes = [{
         name: "theme",
         component: page(() => import("./pages/settings/theme.vue")),
     }, {
-        path: "/navbar",
-        name: "navbar",
-        component: page(() => import("./pages/settings/navbar.vue")),
-    }, {
         path: "/sounds",
         name: "sounds",
         component: page(() => import("./pages/settings/sounds.vue")),
