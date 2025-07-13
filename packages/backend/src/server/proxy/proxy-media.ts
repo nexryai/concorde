@@ -8,6 +8,7 @@ import { StatusError } from "@/misc/fetch.js";
 import { FILE_TYPE_BROWSERSAFE } from "@/const.js";
 import { isMimeImage } from "@/misc/is-mime-image.js";
 import { serverLogger } from "../index.js";
+import config from "@/config/index.js";
 
  
 export async function proxyMedia(ctx: Koa.Context) {
@@ -15,6 +16,11 @@ export async function proxyMedia(ctx: Koa.Context) {
 
     if (typeof url !== "string") {
         ctx.status = 400;
+        return;
+    }
+
+    if (config.mediaProxyBypassUrls?.some((u) => url.startsWith(u))) {
+        ctx.redirect(url);
         return;
     }
 
