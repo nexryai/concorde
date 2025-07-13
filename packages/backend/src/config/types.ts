@@ -44,7 +44,7 @@ export type Source = {
 	proxySmtp?: string;
 	proxyBypassHosts?: string[];
 
-    mediaProxyBypassUrls?: string[];
+	mediaProxyBypassUrls?: string[];
 
 	allowedPrivateNetworks?: string[];
 
