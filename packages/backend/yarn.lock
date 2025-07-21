@@ -1367,10 +1367,10 @@ camelcase@^6.0.0:
   resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-6.3.0.tgz#5685b95eb209ac9c0c177467778c9c84df58ba9a"
   integrity sha512-Gmy6FhYlCY7uOElZUSbxo2UCDH8owEk996gkbrpsgGtrJLM3J7jGxl9Ic7Qwwj4ivOE5AWZWRMecDdF7hqGjFA==
 
-cbor@*, cbor@10.0.3:
-  version "10.0.3"
-  resolved "https://registry.yarnpkg.com/cbor/-/cbor-10.0.3.tgz#202d79cd696f408700af51b0c9771577048a860e"
-  integrity sha512-72Jnj81xMsqepqdcSdf2+fflz/UDsThOHy5hj2MW5F5xzHL8Oa0KQ6I6V9CwVUPxg5pf+W9xp6W2KilaRXWWtw==
+cbor@*, cbor@10.0.9:
+  version "10.0.9"
+  resolved "https://registry.yarnpkg.com/cbor/-/cbor-10.0.9.tgz#a0ef66aac57cf176e928bdc70d37ae305f2db2f8"
+  integrity sha512-KEWYehb/vJkRmigctVQLsz73Us2RNnITo/wOwQV5AtZpLGH1r2PPlsNHdsX460YuHZCyhLklbYzAOuJfOeg34Q==
   dependencies:
     nofilter "^3.0.2"
 
