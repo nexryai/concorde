@@ -143,12 +143,6 @@ export const routes = [{
         component: page(() => import("./pages/_empty_.vue")),
     }],
 }, {
-    path: "/reset-password/:token?",
-    component: page(() => import("./pages/reset-password.vue")),
-}, {
-    path: "/signup-complete/:code",
-    component: page(() => import("./pages/signup-complete.vue")),
-}, {
     path: "/announcements",
     component: page(() => import("./pages/announcements.vue")),
 }, {

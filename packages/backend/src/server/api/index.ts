@@ -14,7 +14,6 @@ import endpoints from "./endpoints.js";
 import handler from "./api-handler.js";
 import signup from "./private/signup.js";
 import signin from "./private/signin.js";
-import signupPending from "./private/signup-pending.js";
 
 // Init app
 const app = new Koa();
@@ -76,7 +75,6 @@ for (const endpoint of endpoints) {
 
 router.post("/signup", signup);
 router.post("/signin", signin);
-router.post("/signup-pending", signupPending);
 
 router.get("/v1/instance/peers", async ctx => {
     const instances = await Instances.find({
