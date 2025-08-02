@@ -5,7 +5,7 @@ import { Users, RegistrationTickets } from "@/models/index.js";
 import { signup } from "../common/signup.js";
 
 export default async (ctx: Koa.Context) => {
-    const body = ctx.request.body;
+    const body = ctx.request.body as Record<string, string>;
 
     const instance = await fetchMeta(true);
 
@@ -69,6 +69,7 @@ export default async (ctx: Koa.Context) => {
         ctx.body = res;
     } catch (e) {
         console.log(e);
-        ctx.throw(400, e);
+        ctx.status = 400;
+        return;
     }
 };
