@@ -69,6 +69,6 @@ export default async (ctx: Koa.Context) => {
         ctx.body = res;
     } catch (e) {
         console.log(e);
-        ctx.throw("Unexpected error", 400);
+        ctx.throw(400, e);
     }
 };
