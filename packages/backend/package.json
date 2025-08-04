@@ -29,7 +29,7 @@
 		"blurhash": "2.0.5",
 		"bull": "4.16.5",
 		"cacheable-lookup": "7.0.0",
-		"cbor": "10.0.3",
+		"cbor": "10.0.10",
 		"chalk": "5.4.1",
 		"chalk-template": "1.1.0",
 		"cli-highlight": "2.1.11",
