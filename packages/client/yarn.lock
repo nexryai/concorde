@@ -674,11 +674,6 @@
   resolved "https://registry.yarnpkg.com/@tabler/icons/-/icons-3.34.1.tgz#a04a8cf79a5ebdcc44796dfa3de51d04811d2f9f"
   integrity sha512-9gTnUvd7Fd/DmQgr3MKY+oJLa1RfNsQo8c/ir3TJAWghOuZXodbtbVp0QBY2DxWuuvrSZFys0HEbv1CoiI5y6A==
 
-"@twemoji/parser@15.0.0":
-  version "15.0.0"
-  resolved "https://registry.yarnpkg.com/@twemoji/parser/-/parser-15.0.0.tgz#8ae9749659ef524b5f0e6ee1412d0e48865e77bf"
-  integrity sha512-lh9515BNsvKSNvyUqbj5yFu83iIDQ77SwVcsN/SnEGawczhsKU6qWuogewN1GweTi5Imo5ToQ9s+nNTf97IXvg==
-
 "@twemoji/parser@16.0.0":
   version "16.0.0"
   resolved "https://registry.yarnpkg.com/@twemoji/parser/-/parser-16.0.0.tgz#289f610ed73204f46141a94180566cf3c1f86f81"
@@ -1475,12 +1470,12 @@ merge2@^1.3.0, merge2@^1.4.1:
   resolved "https://registry.yarnpkg.com/merge2/-/merge2-1.4.1.tgz#4368892f885e907455a6fd7dc55c0c9d404990ae"
   integrity sha512-8q7VEgMJW4J8tcfVPy8g09NcQwZdbwFEqhe/WZkoIzjn/3TGDwtOCYtXGxA3O8tPzpczCCDgv+P2P5y00ZJOOg==
 
-mfm-js@0.24.0:
-  version "0.24.0"
-  resolved "https://registry.yarnpkg.com/mfm-js/-/mfm-js-0.24.0.tgz#06e5827fa1e093b52dfe1dbc6ce16954e8b1cd31"
-  integrity sha512-6m8N0ElH9/4CA1izhVqmxTfLj5Z9RspdqM/lMew4xU/UTgm4Pf//VpDunpasxbRFjeJSVW+zoVwL4ZPfPtfiQg==
+mfm-js@0.25.0:
+  version "0.25.0"
+  resolved "https://registry.yarnpkg.com/mfm-js/-/mfm-js-0.25.0.tgz#c9031d24cd65fc62451f375f688fe3220a970604"
+  integrity sha512-JoK5TOtswXIvZSZ9hUEL+ZkcNV4onu/DtkaKeXK846+sJBBF8DvxYmPutt7nPaRDsUMmJGr64PNVMFpMGdk3hw==
   dependencies:
-    "@twemoji/parser" "15.0.0"
+    "@twemoji/parser" "16.0.0"
 
 micromatch@^4.0.4, micromatch@^4.0.5:
   version "4.0.8"
