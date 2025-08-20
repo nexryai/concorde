@@ -6,6 +6,7 @@ import { createDeleteObjectStorageFileJob } from "@/queue/index.js";
 import { fetchMeta } from "@/misc/fetch-meta.js";
 import { InternalStorage } from "./internal-storage.js";
 import { getS3 } from "./s3.js";
+import { DeleteObjectCommand } from "@aws-sdk/client-s3";
 
 export async function deleteFile(file: DriveFile, isExpired = false) {
     if (file.webpublicUrl != null) {
@@ -123,8 +124,8 @@ export async function deleteObjectStorageFile(key: string) {
 
     const s3 = getS3(meta);
 
-    await s3.deleteObject({
+    await s3.send(new DeleteObjectCommand({
         Bucket: meta.objectStorageBucket!,
         Key: key,
-    }).promise();
+    }));
 }
