@@ -679,11 +679,6 @@
   resolved "https://registry.yarnpkg.com/@tabler/icons/-/icons-3.34.1.tgz#a04a8cf79a5ebdcc44796dfa3de51d04811d2f9f"
   integrity sha512-9gTnUvd7Fd/DmQgr3MKY+oJLa1RfNsQo8c/ir3TJAWghOuZXodbtbVp0QBY2DxWuuvrSZFys0HEbv1CoiI5y6A==
 
-"@twemoji/parser@15.0.0":
-  version "15.0.0"
-  resolved "https://registry.yarnpkg.com/@twemoji/parser/-/parser-15.0.0.tgz#8ae9749659ef524b5f0e6ee1412d0e48865e77bf"
-  integrity sha512-lh9515BNsvKSNvyUqbj5yFu83iIDQ77SwVcsN/SnEGawczhsKU6qWuogewN1GweTi5Imo5ToQ9s+nNTf97IXvg==
-
 "@twemoji/parser@16.0.0":
   version "16.0.0"
   resolved "https://registry.yarnpkg.com/@twemoji/parser/-/parser-16.0.0.tgz#289f610ed73204f46141a94180566cf3c1f86f81"
@@ -1481,12 +1476,12 @@ merge2@^1.3.0, merge2@^1.4.1:
   resolved "https://registry.yarnpkg.com/merge2/-/merge2-1.4.1.tgz#4368892f885e907455a6fd7dc55c0c9d404990ae"
   integrity sha512-8q7VEgMJW4J8tcfVPy8g09NcQwZdbwFEqhe/WZkoIzjn/3TGDwtOCYtXGxA3O8tPzpczCCDgv+P2P5y00ZJOOg==
 
-mfm-js@0.24.0:
-  version "0.24.0"
-  resolved "https://registry.yarnpkg.com/mfm-js/-/mfm-js-0.24.0.tgz#06e5827fa1e093b52dfe1dbc6ce16954e8b1cd31"
-  integrity sha512-6m8N0ElH9/4CA1izhVqmxTfLj5Z9RspdqM/lMew4xU/UTgm4Pf//VpDunpasxbRFjeJSVW+zoVwL4ZPfPtfiQg==
+mfm-js@0.25.0:
+  version "0.25.0"
+  resolved "https://registry.yarnpkg.com/mfm-js/-/mfm-js-0.25.0.tgz#c9031d24cd65fc62451f375f688fe3220a970604"
+  integrity sha512-JoK5TOtswXIvZSZ9hUEL+ZkcNV4onu/DtkaKeXK846+sJBBF8DvxYmPutt7nPaRDsUMmJGr64PNVMFpMGdk3hw==
   dependencies:
-    "@twemoji/parser" "15.0.0"
+    "@twemoji/parser" "16.0.0"
 
 micromatch@^4.0.4, micromatch@^4.0.5:
   version "4.0.8"
@@ -1707,7 +1702,7 @@ rndstr@1.0.0:
     rangestr "0.0.1"
     seedrandom "2.4.2"
 
-rollup@4.46.2, rollup@^4.40.0:
+rollup@4.46.2, rollup@^4.43.0:
   version "4.46.2"
   resolved "https://registry.yarnpkg.com/rollup/-/rollup-4.46.2.tgz#09b1a45d811e26d09bed63dc3ecfb6831c16ce32"
   integrity sha512-WMmLFI+Boh6xbop+OAGo9cQ3OgX9MIg7xOQjn+pTCwOkk+FNDAeAemXkJ3HzDJrVXleLOFVa1ipuc1AmEx1Dwg==
@@ -2013,16 +2008,16 @@ vanilla-tilt@1.8.1:
   resolved "https://registry.yarnpkg.com/vanilla-tilt/-/vanilla-tilt-1.8.1.tgz#09cb4dc89509a55a44bb221917bb8ecdc2e39113"
   integrity sha512-hPB1XUsnh+SIeVSW2beb5RnuFxz4ZNgxjGD78o52F49gS4xaoLeEMh9qrQnJrnEn/vjjBI7IlxrrXmz4tGV0Kw==
 
-vite@7.0.6:
-  version "7.0.6"
-  resolved "https://registry.yarnpkg.com/vite/-/vite-7.0.6.tgz#7866ccb176db4bbeec0adfb3f907f077881591d0"
-  integrity sha512-MHFiOENNBd+Bd9uvc8GEsIzdkn1JxMmEeYX35tI3fv0sJBUTfW5tQsoaOwuY4KhBI09A3dUJ/DXf2yxPVPUceg==
+vite@7.1.2:
+  version "7.1.2"
+  resolved "https://registry.yarnpkg.com/vite/-/vite-7.1.2.tgz#62ffd8a915977ff387fbe7a731af1a650ec5006e"
+  integrity sha512-J0SQBPlQiEXAF7tajiH+rUooJPo0l8KQgyg4/aMunNtrOa7bwuZJsJbDWzeljqQpgftxuq5yNJxQ91O9ts29UQ==
   dependencies:
     esbuild "^0.25.0"
     fdir "^6.4.6"
     picomatch "^4.0.3"
     postcss "^8.5.6"
-    rollup "^4.40.0"
+    rollup "^4.43.0"
     tinyglobby "^0.2.14"
   optionalDependencies:
     fsevents "~2.3.3"
