@@ -1,3 +1,11 @@
+## 12.25Q3.2
+ - Feat: support node24
+ - Docker: Using node24
+ - Feat: migrate to aws-sdk v3
+ - Chore: Upgrade to Koa v3
+ - Chore: 依存関係の更新
+
+
 ## 12.25Q3.1
  - BREAKING: Node.js 18のサポートを削除
  - Security: 特定の状況でのURLプレビューの挙動を修正
