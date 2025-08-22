@@ -104,7 +104,7 @@
 		"ulid": "3.0.0",
 		"uuid": "11.1.0",
 		"web-push": "3.6.7",
-		"ws": "8.18.1",
+		"ws": "8.18.3",
 		"xev": "3.0.2"
 	},
 	"devDependencies": {
@@ -147,7 +147,7 @@
 		"@types/tmp": "0.2.6",
 		"@types/uuid": "10.0.0",
 		"@types/web-push": "3.6.4",
-		"@types/ws": "8.18.0",
+		"@types/ws": "8.18.1",
 		"cross-env": "7.0.3",
 		"execa": "9.6.0",
 		"typescript": "5.8.3"
