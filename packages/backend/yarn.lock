@@ -860,15 +860,15 @@
   resolved "https://registry.yarnpkg.com/@koa/multer/-/multer-4.0.0.tgz#48e56bf41d48c173430338df859a1f46e81ac784"
   integrity sha512-BY6hys3WVX1yL/gcfKWu94z1fJ6ayG1DEEw/s82DnulkaTbumwjF6XqSfNLKFcs8lnJb2QfMJ4DyK4bmF1NDZw==
 
-"@koa/router@13.1.1":
-  version "13.1.1"
-  resolved "https://registry.yarnpkg.com/@koa/router/-/router-13.1.1.tgz#1291b8adca7f61a31a7f8974d28654654211469d"
-  integrity sha512-JQEuMANYRVHs7lm7KY9PCIjkgJk73h4m4J+g2mkw2Vo1ugPZ17UJVqEH8F+HeAdjKz5do1OaLe7ArDz+z308gw==
+"@koa/router@14.0.0":
+  version "14.0.0"
+  resolved "https://registry.yarnpkg.com/@koa/router/-/router-14.0.0.tgz#c0b8f130d8134674607e22ed856a2772949243cf"
+  integrity sha512-LBSu5K0qAaaQcXX/0WIB9PGDevyCxxpnc1uq13vV/CgObaVxuis5hKl3Eboq/8gcb6ebnkAStW9NB/Em2eYyFA==
   dependencies:
     debug "^4.4.1"
     http-errors "^2.0.0"
     koa-compose "^4.1.0"
-    path-to-regexp "^6.3.0"
+    path-to-regexp "^8.2.0"
 
 "@ladjs/consolidate@^1.0.1":
   version "1.0.1"
@@ -4895,10 +4895,10 @@ path-scurry@^1.11.1:
     lru-cache "^10.2.0"
     minipass "^5.0.0 || ^6.0.2 || ^7.0.0"
 
-path-to-regexp@^6.3.0:
-  version "6.3.0"
-  resolved "https://registry.yarnpkg.com/path-to-regexp/-/path-to-regexp-6.3.0.tgz#2b6a26a337737a8e1416f9272ed0766b1c0389f4"
-  integrity sha512-Yhpw4T9C6hPpgPeA28us07OJeqZ5EzQTkbfwuhsUg0c237RomFoETJgmp2sa3F/41gfLE6G5cqcYwznmeEeOlQ==
+path-to-regexp@^8.2.0:
+  version "8.2.0"
+  resolved "https://registry.yarnpkg.com/path-to-regexp/-/path-to-regexp-8.2.0.tgz#73990cc29e57a3ff2a0d914095156df5db79e8b4"
+  integrity sha512-TdrF7fW9Rphjq4RjrW0Kp2AW0Ahwu9sRGTkS6bvDi0SCwZlEZYmcfDbEsTz8RVk0EHIS/Vd1bv3JhG+1xZuAyQ==
 
 path-type@^4.0.0:
   version "4.0.0"
