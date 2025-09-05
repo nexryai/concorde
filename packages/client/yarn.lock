@@ -415,11 +415,6 @@
     wrap-ansi "^8.1.0"
     wrap-ansi-cjs "npm:wrap-ansi@^7.0.0"
 
-"@jridgewell/sourcemap-codec@^1.5.0":
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/@jridgewell/sourcemap-codec/-/sourcemap-codec-1.5.0.tgz#3188bcb273a414b0d215fd22a58540b989b9409a"
-  integrity sha512-gv3ZRaISU3fjPAgNsriBRqGWQL6quFx04YMPW/zD8XMLsU32mhCCbfbO6KZFLjvYpCZ8zyDEgqsgf+PwPaM7GQ==
-
 "@jridgewell/sourcemap-codec@^1.5.5":
   version "1.5.5"
   resolved "https://registry.yarnpkg.com/@jridgewell/sourcemap-codec/-/sourcemap-codec-1.5.5.tgz#6912b00d2c631c0d15ce1a7ab57cd657f2a8f8ba"
@@ -849,18 +844,7 @@
     magic-string "^0.30.17"
     unplugin "^1.16.1"
 
-"@vue/compiler-core@3.5.19", "@vue/compiler-core@^3.5.13":
-  version "3.5.19"
-  resolved "https://registry.yarnpkg.com/@vue/compiler-core/-/compiler-core-3.5.19.tgz#f141d35b61b55ce72c3cbb4dc9eeca3821d451aa"
-  integrity sha512-/afpyvlkrSNYbPo94Qu8GtIOWS+g5TRdOvs6XZNw6pWQQmj5pBgSZvEPOIZlqWq0YvoUhDDQaQ2TnzuJdOV4hA==
-  dependencies:
-    "@babel/parser" "^7.28.3"
-    "@vue/shared" "3.5.19"
-    entities "^4.5.0"
-    estree-walker "^2.0.2"
-    source-map-js "^1.2.1"
-
-"@vue/compiler-core@3.5.21":
+"@vue/compiler-core@3.5.21", "@vue/compiler-core@^3.5.13":
   version "3.5.21"
   resolved "https://registry.yarnpkg.com/@vue/compiler-core/-/compiler-core-3.5.21.tgz#5915b19273f0492336f0beb227aba86813e2c8a8"
   integrity sha512-8i+LZ0vf6ZgII5Z9XmUvrCyEzocvWT+TeR2VBUVlzIH6Tyv57E20mPZ1bCS+tbejgUgmjrEh7q/0F0bibskAmw==
@@ -871,14 +855,6 @@
     estree-walker "^2.0.2"
     source-map-js "^1.2.1"
 
-"@vue/compiler-dom@3.5.19":
-  version "3.5.19"
-  resolved "https://registry.yarnpkg.com/@vue/compiler-dom/-/compiler-dom-3.5.19.tgz#fc57d9dca4987df67d6ce64dbddaac6d73f1a6ef"
-  integrity sha512-Drs6rPHQZx/pN9S6ml3Z3K/TWCIRPvzG2B/o5kFK9X0MNHt8/E+38tiRfojufrYBfA6FQUFB2qBBRXlcSXWtOA==
-  dependencies:
-    "@vue/compiler-core" "3.5.19"
-    "@vue/shared" "3.5.19"
-
 "@vue/compiler-dom@3.5.21":
   version "3.5.21"
   resolved "https://registry.yarnpkg.com/@vue/compiler-dom/-/compiler-dom-3.5.21.tgz#26126447fe1e1d16c8cbac45b26e66b3f7175f65"
@@ -886,21 +862,6 @@
   dependencies:
     "@vue/compiler-core" "3.5.21"
     "@vue/shared" "3.5.21"
-
-"@vue/compiler-sfc@3.5.19":
-  version "3.5.19"
-  resolved "https://registry.yarnpkg.com/@vue/compiler-sfc/-/compiler-sfc-3.5.19.tgz#7f9792ad7de5d4be9b6a32129c75e1f6cd4da015"
-  integrity sha512-YWCm1CYaJ+2RvNmhCwI7t3I3nU+hOrWGWMsn+Z/kmm1jy5iinnVtlmkiZwbLlbV1SRizX7vHsc0/bG5dj0zRTg==
-  dependencies:
-    "@babel/parser" "^7.28.3"
-    "@vue/compiler-core" "3.5.19"
-    "@vue/compiler-dom" "3.5.19"
-    "@vue/compiler-ssr" "3.5.19"
-    "@vue/shared" "3.5.19"
-    estree-walker "^2.0.2"
-    magic-string "^0.30.17"
-    postcss "^8.5.6"
-    source-map-js "^1.2.1"
 
 "@vue/compiler-sfc@3.5.21", "@vue/compiler-sfc@^3.5.13":
   version "3.5.21"
@@ -916,14 +877,6 @@
     magic-string "^0.30.18"
     postcss "^8.5.6"
     source-map-js "^1.2.1"
-
-"@vue/compiler-ssr@3.5.19":
-  version "3.5.19"
-  resolved "https://registry.yarnpkg.com/@vue/compiler-ssr/-/compiler-ssr-3.5.19.tgz#1719e7fda6d54f5696ca63d4d40281668c0e601c"
-  integrity sha512-/wx0VZtkWOPdiQLWPeQeqpHWR/LuNC7bHfSX7OayBTtUy8wur6vT6EQIX6Et86aED6J+y8tTw43qo2uoqGg5sw==
-  dependencies:
-    "@vue/compiler-dom" "3.5.19"
-    "@vue/shared" "3.5.19"
 
 "@vue/compiler-ssr@3.5.21":
   version "3.5.21"
@@ -965,11 +918,6 @@
   dependencies:
     "@vue/compiler-ssr" "3.5.21"
     "@vue/shared" "3.5.21"
-
-"@vue/shared@3.5.19":
-  version "3.5.19"
-  resolved "https://registry.yarnpkg.com/@vue/shared/-/shared-3.5.19.tgz#5301967a910cb62145e4f17131f3bee88b463c83"
-  integrity sha512-IhXCOn08wgKrLQxRFKKlSacWg4Goi1BolrdEeLYn6tgHjJNXVrWJ5nzoxZqNwl5p88aLlQ8LOaoMa3AYvaKJ/Q==
 
 "@vue/shared@3.5.21", "@vue/shared@^3.5.13":
   version "3.5.21"
@@ -1516,14 +1464,7 @@ magic-string-ast@^0.7.0:
   dependencies:
     magic-string "^0.30.17"
 
-magic-string@^0.30.17:
-  version "0.30.17"
-  resolved "https://registry.yarnpkg.com/magic-string/-/magic-string-0.30.17.tgz#450a449673d2460e5bbcfba9a61916a1714c7453"
-  integrity sha512-sNPKHvyjVf7gyjwS4xGTaW/mCnF8wnjtifKBEhxfZ7E/S8tQ0rssrwGNn6q8JH/ohItJfSQp9mBtQYuTlH5QnA==
-  dependencies:
-    "@jridgewell/sourcemap-codec" "^1.5.0"
-
-magic-string@^0.30.18:
+magic-string@^0.30.17, magic-string@^0.30.18:
   version "0.30.18"
   resolved "https://registry.yarnpkg.com/magic-string/-/magic-string-0.30.18.tgz#905bfbbc6aa5692703a93db26a9edcaa0007d2bb"
   integrity sha512-yi8swmWbO17qHhwIBNeeZxTceJMeBvWJaId6dyvTSOwTipqeHhMhOrz6513r1sOKnpvQ7zkhlG8tPrpilwTxHQ==
