@@ -12,7 +12,7 @@
 		"@discordapp/twemoji": "16.0.1",
 		"@rollup/plugin-alias": "5.1.1",
 		"@rollup/plugin-json": "6.1.0",
-		"@rollup/pluginutils": "5.2.0",
+		"@rollup/pluginutils": "5.3.0",
 		"@tabler/icons-webfont": "3.34.1",
 		"@vitejs/plugin-vue": "6.0.1",
 		"@vue/compiler-sfc": "3.5.19",

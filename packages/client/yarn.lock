@@ -562,10 +562,10 @@
   dependencies:
     "@rollup/pluginutils" "^5.1.0"
 
-"@rollup/pluginutils@5.2.0", "@rollup/pluginutils@^5.1.0":
-  version "5.2.0"
-  resolved "https://registry.yarnpkg.com/@rollup/pluginutils/-/pluginutils-5.2.0.tgz#eac25ca5b0bdda4ba735ddaca5fbf26bd435f602"
-  integrity sha512-qWJ2ZTbmumwiLFomfzTyt5Kng4hwPi9rwCYN4SHb6eaRU1KNO4ccxINHr/VhH4GgPlt1XfSTLX2LBTme8ne4Zw==
+"@rollup/pluginutils@5.3.0", "@rollup/pluginutils@^5.1.0":
+  version "5.3.0"
+  resolved "https://registry.yarnpkg.com/@rollup/pluginutils/-/pluginutils-5.3.0.tgz#57ba1b0cbda8e7a3c597a4853c807b156e21a7b4"
+  integrity sha512-5EdhGZtnu3V88ces7s53hhfK5KSASnJZv8Lulpc04cWO3REESroJXg73DFsOmgbU2BhwV0E20bu2IDZb3VKW4Q==
   dependencies:
     "@types/estree" "^1.0.0"
     estree-walker "^2.0.2"
