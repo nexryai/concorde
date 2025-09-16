@@ -13,7 +13,7 @@
 		"@rollup/plugin-alias": "5.1.1",
 		"@rollup/plugin-json": "6.1.0",
 		"@rollup/pluginutils": "5.3.0",
-		"@tabler/icons-webfont": "3.34.1",
+		"@tabler/icons-webfont": "3.35.0",
 		"@vitejs/plugin-vue": "6.0.1",
 		"@vue/compiler-sfc": "3.5.21",
         "@vue-macros/reactivity-transform": "1.1.6",
