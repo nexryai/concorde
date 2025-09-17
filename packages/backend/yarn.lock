@@ -2602,10 +2602,10 @@ co-body@^5.0.0:
     raw-body "^2.2.0"
     type-is "^1.6.14"
 
-color-convert@3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/color-convert/-/color-convert-3.1.0.tgz#ce16ebb832f9d7522649ed9e11bc0ccb9433a524"
-  integrity sha512-TVoqAq8ZDIpK5lsQY874DDnu65CSsc9vzq0wLpNQ6UMBq81GSZocVazPiBbYGzngzBOIRahpkTzCLVe2at4MfA==
+color-convert@3.1.2:
+  version "3.1.2"
+  resolved "https://registry.yarnpkg.com/color-convert/-/color-convert-3.1.2.tgz#cef9e0fd4cb90b07c14697b3fa70af9d7f4870f1"
+  integrity sha512-UNqkvCDXstVck3kdowtOTWROIJQwafjOfXSmddoDrXo4cewMKmusCeF22Q24zvjR8nwWib/3S/dfyzPItPEiJg==
   dependencies:
     color-name "^2.0.0"
 
