@@ -39,7 +39,7 @@
 		"cross-env": "10.1.0",
 		"eslint": "9.36.0",
 		"globals": "16.4.0",
-		"typescript": "5.9.2",
+		"typescript": "5.9.3",
 		"typescript-eslint": "8.46.0"
 	},
 	"packageManager": "yarn@1.22.22+sha1.ac34549e6aa8e7ead463a7407e1c7390f61a6610"
