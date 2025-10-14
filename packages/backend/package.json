@@ -19,7 +19,7 @@
 		"@koa/multer": "4.0.0",
 		"@koa/router": "13.1.1",
 		"@peertube/http-signature": "1.7.0",
-		"@sinonjs/fake-timers": "14.0.0",
+		"@sinonjs/fake-timers": "15.0.0",
 		"abort-controller": "3.0.0",
 		"ajv": "8.17.1",
 		"archiver": "7.0.1",
