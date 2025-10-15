@@ -151,6 +151,6 @@
 		"cross-env": "10.1.0",
 		"execa": "9.6.0",
 		"form-data": "4.0.4",
-		"typescript": "5.9.2"
+		"typescript": "5.9.3"
 	}
 }
