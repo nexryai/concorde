@@ -63,7 +63,7 @@
 		"koa-views": "8.1.0",
 		"mfm-js": "0.25.0",
 		"mime-types": "3.0.1",
-		"mocha": "11.7.2",
+		"mocha": "11.7.4",
 		"ms": "3.0.0-canary.202508261828",
 		"multer": "2.0.2",
 		"nested-property": "4.0.0",
