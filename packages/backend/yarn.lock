@@ -934,10 +934,10 @@
   resolved "https://registry.yarnpkg.com/@msgpackr-extract/msgpackr-extract-win32-x64/-/msgpackr-extract-win32-x64-3.0.2.tgz#0f164b726869f71da3c594171df5ebc1c4b0a407"
   integrity sha512-O+6Gs8UeDbyFpbSh2CPEz/UOrrdWPTBYNblZK5CxxLisYt4kGX3Sc+czffFonyjiGSq3jWLwJS/CCJc7tBr4sQ==
 
-"@noble/hashes@1.7.1":
-  version "1.7.1"
-  resolved "https://registry.yarnpkg.com/@noble/hashes/-/hashes-1.7.1.tgz#5738f6d765710921e7a751e00c20ae091ed8db0f"
-  integrity sha512-B8XBPsn4vT/KJAGqDzbwztd+6Yte3P4V7iafm24bxgDe/mlRuK6xmWPuCNrKt2vDafZ8MfJLlchDG/vYafQEjQ==
+"@noble/hashes@1.8.0":
+  version "1.8.0"
+  resolved "https://registry.yarnpkg.com/@noble/hashes/-/hashes-1.8.0.tgz#cee43d801fcef9644b11b8194857695acd5f815a"
+  integrity sha512-jCs9ldd7NwzpgXDIf6P3+NrHh9/sD6CQdxHyjQI+h/6rDNo88ypBxxz45UDuZHz9r3tNz7N/VInSVoVdtXEI4A==
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
@@ -4798,12 +4798,12 @@ opentype.js@^0.4.3:
   resolved "https://registry.yarnpkg.com/opentype.js/-/opentype.js-0.4.11.tgz#281a2390639cc15931c955d8d63c14a7c7772b41"
   integrity sha512-GthxucX/6aftfLdeU5Ho7o7zmQcC8uVtqdcelVq12X++ndxwBZG8Xb5rFEKT7nEcWDD2P1x+TNuJ70jtj1Mbpw==
 
-otpauth@9.4.0:
-  version "9.4.0"
-  resolved "https://registry.yarnpkg.com/otpauth/-/otpauth-9.4.0.tgz#ed52538848cc52138e4dcd75cef45412b6175ea1"
-  integrity sha512-fHIfzIG5RqCkK9cmV8WU+dPQr9/ebR5QOwGZn2JAr1RQF+lmAuLL2YdtdqvmBjNmgJlYk3KZ4a0XokaEhg1Jsw==
+otpauth@9.4.1:
+  version "9.4.1"
+  resolved "https://registry.yarnpkg.com/otpauth/-/otpauth-9.4.1.tgz#6c5d8cf82b441b2f9f2a2a64ba5e00b992f5f31f"
+  integrity sha512-+iVvys36CFsyXEqfNftQm1II7SW23W1wx9RwNk0Cd97lbvorqAhBDksb/0bYry087QMxjiuBS0wokdoZ0iUeAw==
   dependencies:
-    "@noble/hashes" "1.7.1"
+    "@noble/hashes" "1.8.0"
 
 p-cancelable@^3.0.0:
   version "3.0.0"
