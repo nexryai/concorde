@@ -63,7 +63,7 @@
 	"devDependencies": {
 		"@types/escape-regexp": "0.0.3",
 		"@types/glob": "9.0.0",
-		"@types/gulp": "4.0.17",
+		"@types/gulp": "4.0.18",
 		"@types/gulp-rename": "2.0.6",
 		"@types/katex": "0.16.7",
 		"@types/matter-js": "0.20.2",
