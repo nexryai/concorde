@@ -748,10 +748,10 @@
   dependencies:
     glob "*"
 
-"@types/gulp-rename@2.0.6":
-  version "2.0.6"
-  resolved "https://registry.yarnpkg.com/@types/gulp-rename/-/gulp-rename-2.0.6.tgz#e078406af005e6be3bb3137bf4946c9e549846e2"
-  integrity sha512-pvZdJ004TpC4Ohk9l0CxEXzS9E0L72b5n6lkIEIaWUIy/RlqnkDMHVtEC6InDjd4rt0jZKcvTrDKxeT96WUYnw==
+"@types/gulp-rename@2.0.7":
+  version "2.0.7"
+  resolved "https://registry.yarnpkg.com/@types/gulp-rename/-/gulp-rename-2.0.7.tgz#ab42e942353a1e9438ea45a10c74dc4003069dcd"
+  integrity sha512-W1xIGdui1w4AB1ylt/b8jrpV1MTNfeKmMFfJXsN/NOtSHjRg2w4Wp9H96J+Ld9tZenTtU0u5LatpGFJvOBN5EA==
   dependencies:
     "@types/node" "*"
     "@types/vinyl" "*"
