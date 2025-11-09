@@ -1,13 +1,8 @@
 # Concorde (a.k.a. Nexkey)
 nexryaiによるMisskey v12フォーク
 
-## Important Notice
-[2025/4から適用されるDocker Hubの新しいレートリミット](https://docs.docker.com/docker-hub/usage/pulls)の導入により、公式のDockerイメージを GitHub Container Registry に移行しました。  
-新しいDockerイメージのURL/パスは以下の通りです。
-
-```
-ghcr.io/nexryai/concorde
-```
+## ⚠Important Notice
+Concordeは、2025/12/24を持ってメンテナンスを終了します。本日以降機能の追加等はされず、メンテナンス終了と同時にセキュリティアップデートの提供もされなくなります。インスタンスを運用してる管理者の方は、大変お手数ですが別の実装に乗り換えるなどの対応をお願いします。
 
 
 ## motive
