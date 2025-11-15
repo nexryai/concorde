@@ -47,7 +47,7 @@
 		"ioredis": "5.8.2",
 		"ip-cidr": "4.0.2",
 		"is-svg": "6.1.0",
-		"js-yaml": "4.1.0",
+		"js-yaml": "4.1.1",
 		"jsdom": "27.1.0",
 		"json5": "2.2.3",
 		"json5-loader": "4.0.1",
