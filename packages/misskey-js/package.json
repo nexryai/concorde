@@ -16,7 +16,7 @@
 	},
 	"devDependencies": {
 		"@types/jest": "^30.0.0",
-		"@types/node": "24.10.1",
+		"@types/node": "25.0.0",
 		"jest": "^30.0.4",
 		"jest-fetch-mock": "^3.0.3",
 		"jest-websocket-mock": "^2.2.1",
